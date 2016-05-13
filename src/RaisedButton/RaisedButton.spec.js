@@ -34,6 +34,7 @@ describe('<RaisedButton />', () => {
       ariaLabel: 'Say hello world',
       disabled: true,
       href: 'http://google.com',
+      linkButton: true,
       name: 'Hello World',
     };
 

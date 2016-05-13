@@ -93,6 +93,7 @@ class HomePage extends Component {
             className="demo-button"
             label="Demo"
             onTouchTap={this.handleTouchTapDemo}
+            linkButton={true}
             style={styles.demoStyle}
             labelStyle={styles.label}
           />
@@ -191,6 +192,7 @@ class HomePage extends Component {
         <RaisedButton
           label="GitHub"
           primary={true}
+          linkButton={true}
           href="https://github.com/callemall/material-ui"
           style={styles.button}
         />

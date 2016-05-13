@@ -146,7 +146,8 @@ class RaisedButton extends Component {
      */
     fullWidth: PropTypes.bool,
     /**
-     * The URL to link to when the button is clicked.
+     * If `linkButton` is true, the URL to link to when the button
+     * is clicked.
      */
     href: PropTypes.string,
     /**
@@ -174,6 +175,11 @@ class RaisedButton extends Component {
      * Override the inline-styles of the button's label element.
      */
     labelStyle: PropTypes.object,
+    /**
+     * If true, enable the use of the `href` property to provide
+     * a URL to link to.
+     */
+    linkButton: PropTypes.bool,
     /**
      * Callback function fired when a mouse button is pressed down on
      * the element.

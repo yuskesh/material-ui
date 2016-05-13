@@ -18,9 +18,9 @@ describe('<EnhancedButton />', () => {
     assert.ok(wrapper.is('button'), 'should match a button element');
   });
 
-  it('renders a link when href is provided', () => {
+  it('renders a link when href is provided & linkButton is true', () => {
     const wrapper = shallowWithContext(
-      <EnhancedButton href="http://google.com">Button</EnhancedButton>
+      <EnhancedButton href="http://google.com" linkButton={true}>Button</EnhancedButton>
     );
     assert.ok(wrapper.text(), 'Button', 'should say Button');
     assert.ok(wrapper.is('a'), 'should match a <a> element');
@@ -65,6 +65,7 @@ describe('<EnhancedButton />', () => {
       <EnhancedButton
         disabled={true}
         href="http://google.com"
+        linkButton={true}
       >
         Button
       </EnhancedButton>
